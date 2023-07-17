@@ -65,13 +65,13 @@ var (
 	)
 
 	tasksProcessedTotalDesc = prometheus.NewDesc(
-		prometheus.BuildFQName(namespace, "", "tasks_processed_total"),
+		prometheus.BuildFQName(namespace, "", "tasks_processed"),
 		"Number of tasks processed (both succeeded and failed); broken down by queue",
 		[]string{"queue"}, nil,
 	)
 
 	tasksFailedTotalDesc = prometheus.NewDesc(
-		prometheus.BuildFQName(namespace, "", "tasks_failed_total"),
+		prometheus.BuildFQName(namespace, "", "tasks_failed"),
 		"Number of tasks failed; broken down by queue",
 		[]string{"queue"}, nil,
 	)
